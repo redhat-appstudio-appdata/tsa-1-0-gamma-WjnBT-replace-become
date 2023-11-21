@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: timestamp-authority-1-0-gamma
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/tsa-1-0-gamma/timestamp-authority-1-0-gamma@sha256:a734bfe49a42565085dbbb90a65fb5210d7bbc8cb77130f2dc750413260e0fa4
+        name: container-image
+        resources: {}
+status: {}

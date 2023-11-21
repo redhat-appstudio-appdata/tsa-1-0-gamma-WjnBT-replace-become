@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: timestamp-authority-1-0-gamma
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: timestamp-authority-1-0-gamma
+    app.kubernetes.io/part-of: tsa-1-0-gamma
+  name: timestamp-authority-1-0-gzmed
+spec:
+  port:
+    targetPort: 2997
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: timestamp-authority-1-0-gamma
+    weight: 100
+status: {}
