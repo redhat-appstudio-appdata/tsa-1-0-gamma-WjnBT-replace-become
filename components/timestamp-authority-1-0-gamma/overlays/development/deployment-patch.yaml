@@ -4,6 +4,7 @@ metadata:
   creationTimestamp: null
   name: timestamp-authority-1-0-gamma
 spec:
+  replicas: 1
   selector: {}
   strategy: {}
   template:
@@ -11,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/rhtas-tenant/tsa-1-0-gamma/timestamp-authority-1-0-gamma@sha256:9b4af37245858e6a58359d2db5a8726069c94f56544cb8239c2559cd72a9de9e
+      - image: quay.io/redhat-user-workloads/rhtas-tenant/tsa-1-0-gamma/timestamp-authority-1-0-gamma@sha256:9e0f1ed57f817d628469bec241b628167d30430cc9004e0460869d38cda5cb86
         name: container-image
         resources: {}
 status: {}
